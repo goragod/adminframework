@@ -1,0 +1,19 @@
+.demo h1,
+.demo h2,
+.demo h3,
+.demo h4,
+.demo h5,
+.demo h6 {
+  padding: 0 !important;
+  margin: 0 !important;
+  border: none !important;
+  font-weight: normal !important;
+  display: inline-block;
+}
+.help .demo {
+  padding: 10px;
+}
+.help section:not(:first-of-type) {
+  overflow: hidden;
+  padding-top: 30px;
+}

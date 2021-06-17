@@ -1,0 +1,207 @@
+<article class="setup_frm help">
+  <article class=demo>
+    <header>
+      <h3>Graphs</h3>
+    </header>
+    <section class=clear>
+      <h4>กราฟแบบเส้น (ค่าเริ่มต้น) และแสดงตารางข้อมูลด้วย</h4>
+      <div id="table1" class="graphcs">
+        <canvas></canvas>
+        <table class="data fullwidth border responsive-v">
+          <thead>
+            <tr>
+              <th>ประจำเดือน</th>
+              <th>ม.ค.</th>
+              <th>ก.พ.</th>
+              <th>มี.ค.</th>
+              <th>เม.ย.</th>
+              <th>พ.ค.</th>
+              <th>มิ.ย.</th>
+              <th>ก.ค.</th>
+              <th>ส.ค.</th>
+              <th>ก.ย.</th>
+              <th>ต.ค.</th>
+              <th>พ.ย.</th>
+              <th>ธ.ค.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>ผู้เยี่ยมชมทั้งหมด</th>
+              <td data-text="ม.ค.">12,276</td>
+              <td data-text="ก.พ.">13,570</td>
+              <td data-text="มี.ค.">14,748</td>
+              <td data-text="เม.ย.">15,305</td>
+              <td data-text="พ.ค.">8,641</td>
+              <td data-text="มิ.ย.">9,588</td>
+              <td data-text="ก.ค.">9,679</td>
+              <td data-text="ส.ค.">13,474</td>
+              <td data-text="ก.ย.">11,195</td>
+              <td data-text="ต.ค.">7,099</td>
+              <td data-text="พ.ย.">7,141</td>
+              <td data-text="ธ.ค.">5,781</td>
+            </tr>
+            <tr>
+              <th>Pages view</th>
+              <td data-text="ม.ค.">17,339</td>
+              <td data-text="ก.พ.">17,450</td>
+              <td data-text="มี.ค.">17,033</td>
+              <td data-text="เม.ย.">20,347</td>
+              <td data-text="พ.ค.">13,897</td>
+              <td data-text="มิ.ย.">14,014</td>
+              <td data-text="ก.ค.">14,395</td>
+              <td data-text="ส.ค.">18,867</td>
+              <td data-text="ก.ย.">18,558</td>
+              <td data-text="ต.ค.">11,589</td>
+              <td data-text="พ.ย.">13,230</td>
+              <td data-text="ธ.ค.">8,646</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+        new GGraphs("table1");
+      </script>
+    </section>
+    <section class=clear>
+      <h4>กราฟแบบแท่ง ไม่แสดงตารางข้อมูล และกำหนดสีที่ต้องการด้วยตัวเอง</h4>
+      <div id="table2" class="graphcs">
+        <canvas></canvas>
+        <table class="hidden">
+          <thead>
+            <tr>
+              <th>ประจำเดือน</th>
+              <th>ม.ค.</th>
+              <th>ก.พ.</th>
+              <th>มี.ค.</th>
+              <th>เม.ย.</th>
+              <th>พ.ค.</th>
+              <th>มิ.ย.</th>
+              <th>ก.ค.</th>
+              <th>ส.ค.</th>
+              <th>ก.ย.</th>
+              <th>ต.ค.</th>
+              <th>พ.ย.</th>
+              <th>ธ.ค.</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>ผู้เยี่ยมชมทั้งหมด</th>
+              <td>12,276</td>
+              <td>13,570</td>
+              <td>14,748</td>
+              <td>15,305</td>
+              <td>8,641</td>
+              <td>9,588</td>
+              <td>9,679</td>
+              <td>13,474</td>
+              <td>11,195</td>
+              <td>7,099</td>
+              <td>7,141</td>
+              <td>5,781</td>
+            </tr>
+            <tr>
+              <th>Pages view</th>
+              <td>17,339</td>
+              <td>17,450</td>
+              <td>17,033</td>
+              <td>20,347</td>
+              <td>13,897</td>
+              <td>14,014</td>
+              <td>14,395</td>
+              <td>18,867</td>
+              <td>18,558</td>
+              <td>11,589</td>
+              <td>13,230</td>
+              <td>8,646</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+        new GGraphs("table2", {
+          type: "bar",
+          colors: [
+            "#7E57C2",
+            "#FF5722",
+          ]
+        });
+      </script>
+    </section>
+    <section class=clear>
+      <h4>กราฟวงกลม</h4>
+      <div id="table3" class="graphcs">
+        <canvas></canvas>
+        <table class="hidden">
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th>ตัวอย่าง</th>
+              <th>การขอ Token สำหรับ LINE Notify</th>
+              <th>การใช้งาน CKFinder ร่วมกับ GCMS</th>
+              <th>ปัญหา undefined function mb_strlen()</th>
+              <th>การติดตั้งหรืออัปเกรดเป็น GCMS 4.5.0</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>เยี่ยมชม</th>
+              <td>17</td>
+              <td>15</td>
+              <td>10</td>
+              <td>7</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+        new GGraphs("table3", {
+          type: "pie",
+          centerX: 30 + Math.round($G("table3").getHeight() / 2),
+          labelOffset: 35,
+          centerOffset: 30,
+          strokeColor: null
+        });
+      </script>
+    </section>
+    <section class=clear>
+      <h4>กราฟแบบโดนัท</h4>
+      <div id="table4" class="graphcs">
+        <canvas></canvas>
+        <table class="hidden">
+          <thead>
+            <tr>
+              <th>&nbsp;</th>
+              <th>ตัวอย่าง</th>
+              <th>การขอ Token สำหรับ LINE Notify</th>
+              <th>การใช้งาน CKFinder ร่วมกับ GCMS</th>
+              <th>ปัญหา undefined function mb_strlen()</th>
+              <th>การติดตั้งหรืออัปเกรดเป็น GCMS 4.5.0</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>เยี่ยมชม</th>
+              <td>17</td>
+              <td>15</td>
+              <td>10</td>
+              <td>7</td>
+              <td>5</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <script>
+        new GGraphs("table4", {
+          type: "donut",
+          centerX: 30 + Math.round($G("table4").getHeight() / 2),
+          labelOffset: 35,
+          centerOffset: 30,
+          strokeColor: null
+        });
+      </script>
+    </section>
+  </article>
+</article>
